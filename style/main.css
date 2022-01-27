@@ -1,0 +1,151 @@
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body {
+    background:var(--preta);
+    font-family: 'Arial', Times, serif;
+    color:white;
+}
+
+header .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.100%)) ,url('../img/logo.jpg');
+    height: 400px;
+
+    background-size: cover;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom: 50px;
+}
+
+.filme-principal .container {
+    margin-left: 5px;
+    width:60%;
+}
+
+.filme-principal .descricao{
+
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
+.titulo {
+    margin-top:5%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 40px;
+}
+
+.botao {
+    background-color:rgba(0,0,0,.50);
+    border:none;
+    color:white;
+
+    padding:15px 30px;
+
+   
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor:pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.box-filme {
+    height:100%;
+    width:100%;
+    display: block;
+}
+
+/*Style para o modal*/
+
+.modal {
+    display:none;
+    position:fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: 100%;
+    background-color:rgba(0,0,0,.50);
+    position:absolute;
+}
+
+.conteudo-info {
+    
+    display:none;
+    background-color:#030303e5;
+    margin:10% auto;
+    padding:20px;
+    border:1px solid #888;
+    width:520px;
+    height:320px;
+}
+
+.conteudo-modal{
+    background-color:#fafafae5;
+    margin: 10% auto;
+    padding:20px;
+    border:1px solid #888;
+    width:1000px; 
+}
+
+.close {
+    color:#aaa;
+    float: right;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color:black;
+    text-decoration:none;
+    cursor: pointer;
+}
